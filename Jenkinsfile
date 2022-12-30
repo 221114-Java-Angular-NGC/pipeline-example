@@ -3,7 +3,7 @@ pipeline {
     environment{
         registry='barayathel/spring-backend-lightweight'
         dockerImage=''
-        dockerHubCredentials='docker-access'
+        dockerHubCredentials='030d510e-c949-42ae-83ef-f89d8956f697'
     }
     
     stages{
