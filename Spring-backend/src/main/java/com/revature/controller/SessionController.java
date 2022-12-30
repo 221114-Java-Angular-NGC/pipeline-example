@@ -24,7 +24,7 @@ public class SessionController {
 		//Creating a session and setting "user" to equal "bob"
 		session.setAttribute("user", u);
 		
-		return new Message("You've successfully logged in");
+		return new Message("You've successfully logged in, now with a new message!");
 	}
 	
 	//Check session 
