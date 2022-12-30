@@ -29,7 +29,7 @@ pipeline {
 
 	    steps{
 		script {
-			sh 'docker run -p 7000:7000 barayathel/spring-backend-lightweight:latest'
+			sh 'docker run -p 7007:7000 barayathel/spring-backend-lightweight:latest'
 
 			
 		}
