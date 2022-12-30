@@ -29,7 +29,9 @@ pipeline {
 
 	    steps{
 		script {
-			docker.image(dockerImage).withRun('-p 7000:7000') 
+			sh 'docker run -p 7000:7000 $dockerImage'
+
+			
 		}
 	    }
 	}
