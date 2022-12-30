@@ -14,6 +14,7 @@ pipeline {
 			dockerImage = docker.build "$registry"
 		}
 	}
+	}
         stage("publish image"){
             steps{
 		 script{
@@ -26,5 +27,5 @@ pipeline {
         }
     }			
 
-	}
 }
+
