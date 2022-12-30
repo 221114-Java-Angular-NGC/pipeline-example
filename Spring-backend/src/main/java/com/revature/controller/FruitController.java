@@ -27,6 +27,8 @@ public class FruitController {
 	
 	@RequestMapping(method = RequestMethod.GET , value = "/fruits")
 	public List<Fruit> getAllFruits(){
+		
+		System.out.println("adding arbitrary changes");
 		return fruip.findAll();
 	}
 	
