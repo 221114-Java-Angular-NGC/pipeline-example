@@ -1,0 +1,7 @@
+com\revature\controller\FruitController.class
+com\revature\model\Message.class
+com\revature\repo\FruitRepo.class
+com\revature\model\User.class
+com\revature\controller\SessionController.class
+com\revature\model\Fruit.class
+com\revature\SpringBackendApplication.class
