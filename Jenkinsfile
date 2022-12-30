@@ -19,12 +19,20 @@ pipeline {
             steps{
 		 script{
 		   docker.withRegistry('',dockerHubCredentials){
- 			dockerImage.push("currentBuild.number")
+ 			dockerImage.push("$currentBuild.number")
 			dockerImage.push("latest")
 		   }
 		 }
             }
         }
+	stage("run image"){
+
+	    steps{
+		script {
+			docker.image(dockerImage).withRun('-p 7000:7000') 
+		}
+	    }
+	}
     }			
 
 }
